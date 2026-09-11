@@ -1,4 +1,4 @@
-package com.github.alethuler.api_de_cadastro;
+package com.github.alethuler.api_de_cadastro.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping
-public class Controller {
+public class FuncionarioController {
 
     @GetMapping("/java")
     public String falarJava(){
