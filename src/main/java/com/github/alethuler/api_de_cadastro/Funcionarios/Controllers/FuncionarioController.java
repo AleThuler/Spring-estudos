@@ -1,4 +1,4 @@
-package com.github.alethuler.api_de_cadastro.controllers;
+package com.github.alethuler.api_de_cadastro.Funcionarios.Controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,6 +1,9 @@
-package com.github.alethuler.api_de_cadastro.model;
+package com.github.alethuler.api_de_cadastro.Funcionarios.Model;
 
 import jakarta.persistence.*;
+
+import java.util.ArrayList;
+import com.github.alethuler.api_de_cadastro.Trabalhos.TrabalhosModel;
 
 @Entity
 @Table(name = "tb_cadastro_de_funcionarios")
@@ -9,9 +12,16 @@ public class FuncionarioModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
     private String nome;
+
     private String cargo;
+
     private double salario;
+
+    @ManyToOne
+    @JoinColumn(name = "id_trabalhos")
+    private TrabalhosModel trabalhos;
 
     public FuncionarioModel(){
 
